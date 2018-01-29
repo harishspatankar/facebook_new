@@ -1,0 +1,13 @@
+<%= form_with scope: :post,url: user_posts_url, local: true do |form| %>
+  <p>
+    <%= form.label :'Post title' %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :Content %><br>
+    <%= form.text_area :content %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
